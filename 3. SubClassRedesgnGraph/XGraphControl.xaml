@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="_3.SubClassRedesgnGraph.XGraphControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_3.SubClassRedesgnGraph"
+             mc:Ignorable="d" 
+             xmlns:graph="clr-namespace:GraphSharp.Controls;assembly=GraphSharp.Controls" 
+             xmlns:Controls="clr-namespace:WPFExtensions.Controls;assembly=WPFExtensions" 
+             xmlns:tree="clr-namespace:GraphSharp.Algorithms.Layout.Simple.Tree;assembly=GraphSharp"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel>
+        
+
+        <ScrollViewer Name="scrollBox1" Focusable="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <local:XGraphLayout x:Name="layout" Margin="10"
+						Graph="{Binding Path=Graph}"
+						LayoutAlgorithmType="{Binding Path=LayoutAlgorithmType, Mode=OneWay}"                        
+						OverlapRemovalAlgorithmType="FSA"                        
+						HighlightAlgorithmType="Simple" DataContext="{Binding}" OverlapRemovalConstraint="Must">
+                <local:XGraphLayout.LayoutParameters>
+                    <tree:SimpleTreeLayoutParameters
+                    LayerGap="30"
+                    VertexGap="30"
+                    Direction="TopToBottom"
+                />
+                </local:XGraphLayout.LayoutParameters>
+
+            </local:XGraphLayout>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

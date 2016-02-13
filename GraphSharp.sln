@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. SimpleWpfGraph", "Simple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. SimpleWinformGraph", "SimpleWinformGraph\2. SimpleWinformGraph.csproj", "{385336D1-9E53-463E-9C1E-DF74300B9440}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. SubClassRedesgnGraph", "3. SubClassRedesgnGraph\3. SubClassRedesgnGraph.csproj", "{223BFBBD-3144-4EBD-BB72-776D489D2C52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{385336D1-9E53-463E-9C1E-DF74300B9440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{385336D1-9E53-463E-9C1E-DF74300B9440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{385336D1-9E53-463E-9C1E-DF74300B9440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223BFBBD-3144-4EBD-BB72-776D489D2C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223BFBBD-3144-4EBD-BB72-776D489D2C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223BFBBD-3144-4EBD-BB72-776D489D2C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223BFBBD-3144-4EBD-BB72-776D489D2C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
